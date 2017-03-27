@@ -1,0 +1,433 @@
+/*******************
+LOGIN FORM STYLESHEET
+by: Amit Jakhu
+www.amitjakhu.com
+*******************/
+
+/*******************
+FONTS
+*******************/
+
+/*@import url(http://fonts.googleapis.com/css?family=Bree+Serif);*/
+
+/*******************
+SELECTION STYLING
+*******************/
+
+/*******************
+BODY STYLING
+*******************/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight:300;
+	text-align: left;
+	text-decoration: none;
+}
+
+#wrapper {
+	/* Center wrapper perfectly */
+	width: 300px;
+	height: 400px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -200px;
+}
+
+/*
+.gradient {
+	width: 600px;
+	height: 600px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -300px;
+	margin-top: -300px;
+
+	background: url(../images/gradient.png) no-repeat;
+}
+*/
+
+.gradient {
+	/* Center Positioning */
+	width: 600px;
+	height: 600px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -300px;
+	margin-top: -300px;
+
+}
+
+/*******************
+LOGIN FORM
+*******************/
+
+.login-form {
+	width: 300px;
+	margin: 0 auto;
+	position: relative;
+	z-index:5;
+
+    border: 3px solid #919191;
+	background: #f3f3f3;
+	border-radius: 5px;
+
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/*******************
+HEADER
+*******************/
+
+.login-form .header {
+	padding: 40px 30px 30px 30px;
+}
+
+.login-form .header h1 {
+	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 28px;
+	line-height:34px;
+	color: #666;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+	margin-bottom: 10px;
+}
+
+.login-form .header span {
+	font-size: 11px;
+	line-height: 16px;
+	color: #678889;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+}
+
+/*******************
+CONTENT
+*******************/
+
+.login-form .content {
+	padding: 0 30px 25px 30px;
+}
+
+/* Input field */
+.login-form .content .input {
+	width: 188px;
+	padding: 15px 25px;
+
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #9d9e9e;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+
+	background: #fff;
+	border-radius: 5px;
+
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+	-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+}
+
+/* Second input field */
+.login-form .content .password, .login-form .content .pass-icon {
+	margin-top: 25px;
+}
+
+.login-form .content .input:hover {
+	background: #dfe9ec;
+	color: #414848;
+}
+
+.login-form .content .input:focus {
+	background: #dfe9ec;
+	color: #414848;
+
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+}
+
+.user-icon, .pass-icon {
+	width: 46px;
+	height: 47px;
+	display: block;
+	position: absolute;
+	left: 0px;
+	padding-right: 2px;
+	z-index: 3;
+
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+
+.user-icon {
+	top:147px; /* Positioning fix for slide-in, got lazy to think up of simpler method. */
+	background: rgba(65,72,72,0.75) url(../images/user-icon.png) no-repeat center;
+}
+
+.pass-icon {
+	top:221px;
+	background: rgba(65,72,72,0.75) url(../images/pass-icon.png) no-repeat center;
+}
+
+/* Animation */
+.input, .user-icon, .pass-icon, .button, .register {
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+
+/*******************
+FOOTER
+*******************/
+
+.login-form .footer {
+	padding: 25px 30px 40px 30px;
+	overflow: auto;
+
+	background: #d4dedf;
+	border-top: 1px solid #fff;
+
+	box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+	-moz-box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+	-webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+}
+
+/* Login button */
+.login-form .footer .button {
+	float:right;
+	padding: 11px 25px;
+
+	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 18px;
+	color: #fff;
+	text-shadow: 0px 1px 0 rgba(0,0,0,0.25);
+
+	background: #009688;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	cursor: pointer;
+
+	box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+	-moz-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+	-webkit-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+}
+
+/*
+.login-form .footer .button:hover {
+	background: #3f9db8;
+	border: 1px solid rgba(256,256,256,0.75);
+
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+}
+
+.login-form .footer .button:focus {
+	position: relative;
+	bottom: -1px;
+
+	background: #56c2e1;
+
+	box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+	-moz-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+	-webkit-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+}*/
+
+/* Register button */
+.login-form .footer .register {
+	display: block;
+	float: right;
+	padding: 10px;
+	margin-right: 20px;
+
+	background: none;
+	border: none;
+	cursor: pointer;
+
+	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 18px;
+	color: #414848;
+	text-shadow: 0px 1px 0 rgba(256,256,256,0.5);
+}
+
+.login-form .footer .register:hover {
+	color: #3f9db8;
+}
+
+.login-form .footer .register:focus {
+	position: relative;
+	bottom: -1px;
+}
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu {
+  width: 160px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #ffffff;
+}
+#cssmenu ul ul {
+  display: none;
+}
+.align-right {
+  float: right;
+}
+#cssmenu > ul > li > a {
+  padding: 15px 20px;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+  background: #36aae7;
+  background: -webkit-linear-gradient(#36aae7, #1fa0e4);
+  background: -moz-linear-gradient(#36aae7, #1fa0e4);
+  background: -o-linear-gradient(#36aae7, #1fa0e4);
+  background: -ms-linear-gradient(#36aae7, #1fa0e4);
+  background: linear-gradient(#36aae7, #1fa0e4);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+#cssmenu > ul > li > a:hover,
+#cssmenu > ul > li.active > a,
+#cssmenu > ul > li.open > a {
+  color: #eeeeee;
+  background: none;
+}
+#cssmenu > ul > li.open > a {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+#cssmenu > ul > li:last-child > a,
+#cssmenu > ul > li.last > a {
+
+}
+.holder {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.holder::after,
+.holder::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  right: 20px;
+  z-index: 10;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.holder::after {
+  top: 17px;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+}
+#cssmenu > ul > li > a:hover > span::after,
+#cssmenu > ul > li.active > a > span::after,
+#cssmenu > ul > li.open > a > span::after {
+  border-color: #eeeeee;
+}
+.holder::before {
+  top: 18px;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  border-top-color: inherit;
+  border-left-color: inherit;
+}
+#cssmenu ul ul li a {
+  cursor: pointer;
+  padding: 10px 20px;
+  z-index: 1;
+  text-decoration: none;
+  font-size: 13px;
+  color: #eeeeee;
+  background: #49505a;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+#cssmenu ul ul li:hover > a,
+#cssmenu ul ul li.open > a,
+#cssmenu ul ul li.active > a {
+  background: #424852;
+  color: #ffffff;
+}
+#cssmenu ul ul li:first-child > a {
+  box-shadow: none;
+}
+#cssmenu ul ul ul li:first-child > a {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+#cssmenu ul ul ul li a {
+  padding-left: 30px;
+}
+#cssmenu > ul > li > ul > li:last-child > a,
+#cssmenu > ul > li > ul > li.last > a {
+  border-bottom: 0;
+}
+#cssmenu > ul > li > ul > li.open:last-child > a,
+#cssmenu > ul > li > ul > li.last.open > a {
+  border-bottom: 1px solid #32373e;
+}
+#cssmenu > ul > li > ul > li.open:last-child > ul > li:last-child > a {
+  border-bottom: 0;
+}
+#cssmenu ul ul li.has-sub > a::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  right: 20px;
+  z-index: 10;
+  top: 11.5px;
+  border-top: 2px solid #eeeeee;
+  border-left: 2px solid #eeeeee;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+#cssmenu ul ul li.active > a::after,
+#cssmenu ul ul li.open > a::after,
+#cssmenu ul ul li > a:hover::after {
+  border-color: #ffffff;
+}
